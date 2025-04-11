@@ -2,8 +2,8 @@
 > Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
 
 ## 👨‍🎓 Integrantes
-- Nome do Estudante 1
-- Nome do Estudante 2
+- Matheus carneiro da Cunha
+- Lucas Daris
 - ...
 
 ## 💡 Ideia Principal
