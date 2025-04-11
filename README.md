@@ -11,6 +11,7 @@ Um sistema que analisa imagens de câmeras para contar o número de pessoas e de
 - Dashboard que exibe estatísticas em tempo real sobre a movimentação.  
 - Integrar alertas para controle de lotação.  
 - Relatórios com gráficos e insights sobre o fluxo de pessoas.
+- Talvez analisar tendências de fluxo.
 
 ## 👥 Público-Alvo
 Empresas e governos que precisam monitorar o fluxo de pessoas em locais públicos para otimizar serviços e segurança.
