@@ -33,9 +33,13 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
   - **OpenCV**: Para pré-processamento de imagens e manipulação de vídeo.  
   - **Flask ou FastAPI**: Para criar uma API e interface web com o dashboard.  
     > FastAPI tem melhor performance e é mais moderna; Flask é mais simples e direto.
+  - **GPT-4 ou LLaMA**: Geração Automática de Relatórios.
+    > Um LLM pode analisar os dados de movimentação (fluxo por horário, local, etc.) e gerar relatórios descritivos automaticamente.
+    > Ex: “Hoje, entre 12h e 14h, observou-se um aumento de 35% no fluxo em relação à média da semana.”
   - **Banco de Dados (SQLite ou PostgreSQL)**: Armazenamento das contagens e histórico.  
     > SQLite é leve e fácil de configurar; PostgreSQL é robusto para produção e grandes volumes de dados.
 
+      
 - **Ferramentas de Visualização:**  
   - Bibliotecas de gráficos (como Plotly ou Matplotlib) para visualização no dashboard.  
 
