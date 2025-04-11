@@ -1,46 +1,62 @@
-# Nome do Projeto
-> Um nome provisório que resuma bem a ideia. Seja criativo, mas claro!
+# Detecção e Contagem de Pessoas em Espaços Públicos
 
 ## 👨‍🎓 Integrantes
-- Matheus carneiro da Cunha
+- Matheus Carneiro da Cunha  
 - Lucas Daris
-- ...
 
 ## 💡 Ideia Principal
-Descreva em poucas linhas o que o projeto propõe fazer. 
-Pense como se estivesse explicando para alguém fora da área de tecnologia.
+Um sistema que analisa imagens de câmeras para contar o número de pessoas e detectar padrões de movimentação.
 
 ## 🎯 Objetivos
-- Liste de forma clara o que o sistema pretende resolver ou melhorar.
-- Pode usar bullets ou parágrafos curtos.
+- Dashboard que exibe estatísticas em tempo real sobre a movimentação.  
+- Integrar alertas para controle de lotação.  
+- Relatórios com gráficos e insights sobre o fluxo de pessoas.
 
 ## 👥 Público-Alvo
-Quem se beneficia com esse projeto? Um setor específico? Um tipo de usuário?
+Empresas e governos que precisam monitorar o fluxo de pessoas em locais públicos para otimizar serviços e segurança.
 
 ## 🤖 Agentes Envolvidos
-Liste os agentes que existirão no sistema e suas funções.
-Exemplo:
-- Agente A: coleta dados
-- Agente B: toma decisões
-- Agente C: executa ações no ambiente
+- **Agente de Visão (Detector)**: Responsável por detectar pessoas nas imagens captadas pelas câmeras usando visão computacional.  
+- **Agente de Rastreamento (Tracker)**: Rastreia os indivíduos detectados para evitar contagens duplicadas e identificar padrões de movimentação.  
+- **Agente de Análise (Analista)**: Compila os dados de rastreamento e gera estatísticas, insights e relatórios.  
+- **Agente de Interface (Dashboard)**: Exibe em tempo real os dados coletados e gerencia os alertas para controle de lotação.  
 
 ## 🧱 Tecnologias Pretendidas
-- Linguagem de programação
-- Bibliotecas e frameworks
-- Ferramentas para teste, simulação, visualização, etc.
+- **Linguagem de Programação:** Python  
+  > Escolhida por ser amplamente usada em aplicações de visão computacional e possuir grande variedade de bibliotecas especializadas.
 
-> Justifique, sempre que possível, **por que escolheu cada ferramenta**.
+- **Bibliotecas e Frameworks:**
+  - **YOLO / OpenCV + Haar Cascades**: Para detecção de pessoas.  
+    > YOLO é rápido e eficiente para detecção em tempo real; Haar é uma alternativa mais leve para ambientes com menos poder computacional.
+  - **DeepSort**: Para rastreamento de indivíduos.  
+    > Permite identificar e seguir pessoas ao longo de múltiplos frames, evitando duplicações.
+  - **OpenCV**: Para pré-processamento de imagens e manipulação de vídeo.  
+  - **Flask ou FastAPI**: Para criar uma API e interface web com o dashboard.  
+    > FastAPI tem melhor performance e é mais moderna; Flask é mais simples e direto.
+  - **Banco de Dados (SQLite ou PostgreSQL)**: Armazenamento das contagens e histórico.  
+    > SQLite é leve e fácil de configurar; PostgreSQL é robusto para produção e grandes volumes de dados.
+
+- **Ferramentas de Visualização:**  
+  - Bibliotecas de gráficos (como Plotly ou Matplotlib) para visualização no dashboard.  
 
 ## 📦 Entradas e Saídas Esperadas
 **Entradas:**
-- Quais dados o sistema recebe?
+- Vídeos ou imagens de câmeras em tempo real.
+- Parâmetros de configuração (como zonas de interesse ou limite de lotação).
 
 **Saídas:**
-- Quais ações ou informações ele gera?
+- Contagem de pessoas em tempo real.
+- Alertas de lotação (por exemplo, se ultrapassar determinado número).
+- Relatórios e gráficos sobre fluxo de pessoas ao longo do tempo.
+- Logs históricos com dados por dia/horário/local.
 
 ## 🔁 Interação entre os Agentes
-Descreva como os agentes vão se comunicar ou se coordenar.
-Pode ser uma descrição textual ou um fluxograma em breve.
+- O **Agente de Visão** processa os frames das câmeras e envia as detecções para o **Agente de Rastreamento**.
+- O **Agente de Rastreamento** mantém o histórico de cada pessoa detectada e envia dados para o **Agente de Análise**.
+- O **Agente de Análise** gera estatísticas, identifica horários de pico e detecta padrões.
+- O **Agente de Interface** consome essas informações para exibir no dashboard e emitir alertas em tempo real.
+
+*(Um fluxograma poderá ser adicionado posteriormente para visualizar essas interações.)*
 
 ## 🗂️ Organização e Planejamento do Projeto
 O progresso deste projeto será monitorado através do **GitHub Projects**.
@@ -50,27 +66,27 @@ O progresso deste projeto será monitorado através do **GitHub Projects**.
 - Tarefas em andamento
 - Tarefas concluídas
 
-Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.
+Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.  
 Use etiquetas (labels) e comentários para detalhar o andamento e as decisões.
 
 ## 📌 Status Inicial do Projeto
-- [ ] Ideia discutida e validada com o professor
-- [ ] Estrutura básica do repositório criada
-- [ ] Quadro no GitHub Projects criado
-- [ ] Primeiras tarefas definidas e atribuídas
+- [x] Ideia discutida e validada com o professor  
+- [ ] Estrutura básica do repositório criada  
+- [ ] Quadro no GitHub Projects criado  
+- [ ] Primeiras tarefas definidas e atribuídas  
 
 ## 📄 Documentação Futura
 Este repositório poderá incluir:
-- Diagramas de arquitetura
-- Relatórios parciais de progresso
-- Scripts de testes ou simulações
-- Resultados e conclusões finais
+- Diagramas de arquitetura do sistema multiagente  
+- Relatórios parciais de progresso  
+- Scripts de testes ou simulações  
+- Resultados e conclusões finais  
 
 ## 👨‍🏫 Acompanhamento pelo Professor
 Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igorbarcosta` como colaborador do repositório.**
 
 ### Como fazer:
-1. Vá até a aba **"Settings"** do seu repositório.
-2. Clique em **"Collaborators"** no menu lateral.
-3. Digite o nome de usuário: `igorbarcosta`
+1. Vá até a aba **"Settings"** do seu repositório.  
+2. Clique em **"Collaborators"** no menu lateral.  
+3. Digite o nome de usuário: `igorbarcosta`  
 4. Clique em **"Add collaborator"** e confirme.
