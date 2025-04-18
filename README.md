@@ -1,8 +1,31 @@
 # Detecção e Contagem de Pessoas em Espaços Públicos
 
 ## 👨‍🎓 Integrantes
-- Matheus Carneiro da Cunha  
-- Lucas Daris
+
+<div style="display: inline_block;" align="center">
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/MatheusCarne" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/88046644?v=4" width="100px;" alt="Avatar Matheus"/><br>
+        <sub>
+          <b>Matheus Carneiro</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LucasByteX" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/105729815?v=4" width="100px;" alt="Avatar Lucas"/><br>
+        <sub>
+          <b>Lucas Daris</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ## 💡 Ideia Principal
 Um sistema que analisa imagens de câmeras para contar o número de pessoas e detectar padrões de movimentação.
@@ -86,12 +109,3 @@ Este repositório poderá incluir:
 - Relatórios parciais de progresso  
 - Scripts de testes ou simulações  
 - Resultados e conclusões finais  
-
-## 👨‍🏫 Acompanhamento pelo Professor
-Para que o professor possa acompanhar e orientar o andamento do projeto, **adicione o usuário `igorbarcosta` como colaborador do repositório.**
-
-### Como fazer:
-1. Vá até a aba **"Settings"** do seu repositório.  
-2. Clique em **"Collaborators"** no menu lateral.  
-3. Digite o nome de usuário: `igorbarcosta`  
-4. Clique em **"Add collaborator"** e confirme.
