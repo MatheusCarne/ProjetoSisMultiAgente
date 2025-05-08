@@ -31,12 +31,14 @@
 
 O notebook [`Notebooks/detectionyolo.ipynb`](Notebooks/detectionyolo.ipynb) demonstra a detecção de pessoas usando YOLOv3 com OpenCV. Ele carrega uma imagem e identifica pessoas com bounding boxes.
 
-### Como Executar
+## Requisitos
+Python 3.7+
 
-1. Clone o repositório
-2. Acesse o Google Colab
-3. Faça upload do notebook e da pasta `yolo/yoloDados`
-4. Execute as células, começando pela instalação de dependências
+OpenCV (opencv-python)
+
+NumPy
+
+Google Colab (ou ambiente com suporte a Jupyter)
 
 Recomenda-se uso de GPU para melhor desempenho.
 
