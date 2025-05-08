@@ -96,8 +96,11 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
 
 ## 📄 Documentação Futura
 Este repositório poderá incluir:
-###  Diagramas de arquitetura do sistema multiagente
-  ![Foto](projeto/imagens/diagramadearquitetura.png)
 - Relatórios parciais de progresso  
 - Scripts de testes ou simulações  
 - Resultados e conclusões finais  
+- Diagramas de arquitetura do sistema multiagente
+
+<div align="center">
+  <img src="projeto/imagens/diagramadearquitetura.png" alt="Diagrama" width="100%">
+</div>
