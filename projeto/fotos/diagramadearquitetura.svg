@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="877pt" height="392pt" viewBox="0.00 0.00 877.03 391.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 387.6)">
+<title>G</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-387.6 873.03,-387.6 873.03,4 -4,4"/>
+<!-- agent1 -->
+<g id="node1" class="node">
+<title>agent1</title>
+<path fill="#f9f9f9" stroke="black" d="M478.89,-307.6C478.89,-307.6 334.13,-307.6 334.13,-307.6 328.13,-307.6 322.13,-301.6 322.13,-295.6 322.13,-295.6 322.13,-278 322.13,-278 322.13,-272 328.13,-266 334.13,-266 334.13,-266 478.89,-266 478.89,-266 484.89,-266 490.89,-272 490.89,-278 490.89,-278 490.89,-295.6 490.89,-295.6 490.89,-301.6 484.89,-307.6 478.89,-307.6"/>
+<text text-anchor="middle" x="406.51" y="-291" font-family="Times,serif" font-size="14.00">Agente de Interface</text>
+<text text-anchor="middle" x="406.51" y="-274.2" font-family="Times,serif" font-size="14.00">Gerencia alertas e exibição</text>
+</g>
+<!-- agent2 -->
+<g id="node2" class="node">
+<title>agent2</title>
+<path fill="#f9f9f9" stroke="black" d="M752.15,-383.6C752.15,-383.6 638.87,-383.6 638.87,-383.6 632.87,-383.6 626.87,-377.6 626.87,-371.6 626.87,-371.6 626.87,-354 626.87,-354 626.87,-348 632.87,-342 638.87,-342 638.87,-342 752.15,-342 752.15,-342 758.15,-342 764.15,-348 764.15,-354 764.15,-354 764.15,-371.6 764.15,-371.6 764.15,-377.6 758.15,-383.6 752.15,-383.6"/>
+<text text-anchor="middle" x="695.51" y="-367" font-family="Times,serif" font-size="14.00">Agente de Análise</text>
+<text text-anchor="middle" x="695.51" y="-350.2" font-family="Times,serif" font-size="14.00">Geração de relatórios</text>
+</g>
+<!-- agent3 -->
+<g id="node3" class="node">
+<title>agent3</title>
+<path fill="#f9f9f9" stroke="black" d="M689.5,-288.6C689.5,-288.6 543.53,-288.6 543.53,-288.6 537.53,-288.6 531.53,-282.6 531.53,-276.6 531.53,-276.6 531.53,-259 531.53,-259 531.53,-253 537.53,-247 543.53,-247 543.53,-247 689.5,-247 689.5,-247 695.5,-247 701.5,-253 701.5,-259 701.5,-259 701.5,-276.6 701.5,-276.6 701.5,-282.6 695.5,-288.6 689.5,-288.6"/>
+<text text-anchor="middle" x="616.51" y="-272" font-family="Times,serif" font-size="14.00">Agente de Rastreamento</text>
+<text text-anchor="middle" x="616.51" y="-255.2" font-family="Times,serif" font-size="14.00">Deep SORT, ID persistente</text>
+</g>
+<!-- agent4 -->
+<g id="node4" class="node">
+<title>agent4</title>
+<path fill="#f9f9f9" stroke="black" d="M586.41,-41.6C586.41,-41.6 448.61,-41.6 448.61,-41.6 442.61,-41.6 436.61,-35.6 436.61,-29.6 436.61,-29.6 436.61,-12 436.61,-12 436.61,-6 442.61,0 448.61,0 448.61,0 586.41,0 586.41,0 592.41,0 598.41,-6 598.41,-12 598.41,-12 598.41,-29.6 598.41,-29.6 598.41,-35.6 592.41,-41.6 586.41,-41.6"/>
+<text text-anchor="middle" x="517.51" y="-25" font-family="Times,serif" font-size="14.00">Agente de Visão (YOLO)</text>
+<text text-anchor="middle" x="517.51" y="-8.2" font-family="Times,serif" font-size="14.00">Detecção de pessoas</text>
+</g>
+<!-- frontend -->
+<g id="node5" class="node">
+<title>frontend</title>
+<path fill="#ff99ff" stroke="black" d="M157.95,-184.4C157.95,-184.4 12,-184.4 12,-184.4 6,-184.4 0,-178.4 0,-172.4 0,-172.4 0,-121.2 0,-121.2 0,-115.2 6,-109.2 12,-109.2 12,-109.2 157.95,-109.2 157.95,-109.2 163.95,-109.2 169.95,-115.2 169.95,-121.2 169.95,-121.2 169.95,-172.4 169.95,-172.4 169.95,-178.4 163.95,-184.4 157.95,-184.4"/>
+<text text-anchor="middle" x="84.98" y="-167.8" font-family="Times,serif" font-size="14.00">Dashboard Web (Frontend)</text>
+<text text-anchor="middle" x="84.98" y="-151" font-family="Times,serif" font-size="14.00">- Visualização de dados</text>
+<text text-anchor="middle" x="84.98" y="-134.2" font-family="Times,serif" font-size="14.00">- Alertas em tempo real</text>
+<text text-anchor="middle" x="84.98" y="-117.4" font-family="Times,serif" font-size="14.00">- Gráficos interativos</text>
+</g>
+<!-- backend -->
+<g id="node6" class="node">
+<title>backend</title>
+<path fill="#99ff99" stroke="black" d="M391.73,-184.4C391.73,-184.4 253.95,-184.4 253.95,-184.4 247.95,-184.4 241.95,-178.4 241.95,-172.4 241.95,-172.4 241.95,-121.2 241.95,-121.2 241.95,-115.2 247.95,-109.2 253.95,-109.2 253.95,-109.2 391.73,-109.2 391.73,-109.2 397.73,-109.2 403.73,-115.2 403.73,-121.2 403.73,-121.2 403.73,-172.4 403.73,-172.4 403.73,-178.4 397.73,-184.4 391.73,-184.4"/>
+<text text-anchor="middle" x="322.84" y="-167.8" font-family="Times,serif" font-size="14.00">- Agente de Interface</text>
+<text text-anchor="middle" x="322.84" y="-151" font-family="Times,serif" font-size="14.00">- Agente de Análise</text>
+<text text-anchor="middle" x="322.84" y="-134.2" font-family="Times,serif" font-size="14.00">- Agente de Rastreamento</text>
+<text text-anchor="middle" x="322.84" y="-117.4" font-family="Times,serif" font-size="14.00">- Agente de Visão</text>
+</g>
+<!-- frontend&#45;&gt;backend -->
+<g id="edge1" class="edge">
+<title>frontend-&gt;backend</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M170.18,-146.8C189.77,-146.8 210.69,-146.8 230.57,-146.8"/>
+<polygon fill="black" stroke="black" points="230.3,-150.3 240.3,-146.8 230.3,-143.3 230.3,-150.3"/>
+</g>
+<!-- database -->
+<g id="node7" class="node">
+<title>database</title>
+<path fill="#9999ff" stroke="black" d="M610.72,-189.1C610.72,-194.29 580.47,-198.5 543.23,-198.5 505.98,-198.5 475.73,-194.29 475.73,-189.1 475.73,-189.1 475.73,-104.5 475.73,-104.5 475.73,-99.31 505.98,-95.1 543.23,-95.1 580.47,-95.1 610.72,-99.31 610.72,-104.5 610.72,-104.5 610.72,-189.1 610.72,-189.1"/>
+<path fill="none" stroke="black" d="M610.72,-189.1C610.72,-183.91 580.47,-179.7 543.23,-179.7 505.98,-179.7 475.73,-183.91 475.73,-189.1"/>
+<text text-anchor="middle" x="543.23" y="-167.8" font-family="Times,serif" font-size="14.00">Banco de Dados</text>
+<text text-anchor="middle" x="543.23" y="-151" font-family="Times,serif" font-size="14.00">- Contagens</text>
+<text text-anchor="middle" x="543.23" y="-134.2" font-family="Times,serif" font-size="14.00">- Registros históricos</text>
+<text text-anchor="middle" x="543.23" y="-117.4" font-family="Times,serif" font-size="14.00">- Logs</text>
+</g>
+<!-- backend&#45;&gt;database -->
+<g id="edge2" class="edge">
+<title>backend-&gt;database</title>
+<path fill="none" stroke="black" d="M403.96,-146.8C423.56,-146.8 444.48,-146.8 463.99,-146.8"/>
+<polygon fill="black" stroke="black" points="463.77,-150.3 473.77,-146.8 463.77,-143.3 463.77,-150.3"/>
+</g>
+<!-- cameras -->
+<g id="node8" class="node">
+<title>cameras</title>
+<path fill="#ffff99" stroke="black" d="M857.03,-167.6C857.03,-167.6 694.72,-167.6 694.72,-167.6 688.72,-167.6 682.72,-161.6 682.72,-155.6 682.72,-155.6 682.72,-138 682.72,-138 682.72,-132 688.72,-126 694.72,-126 694.72,-126 857.03,-126 857.03,-126 863.03,-126 869.03,-132 869.03,-138 869.03,-138 869.03,-155.6 869.03,-155.6 869.03,-161.6 863.03,-167.6 857.03,-167.6"/>
+<text text-anchor="middle" x="775.87" y="-151" font-family="Times,serif" font-size="14.00">Câmeras / Arquivos de Vídeo</text>
+<text text-anchor="middle" x="775.87" y="-134.2" font-family="Times,serif" font-size="14.00">(Fonte de imagens ao vivo)</text>
+</g>
+<!-- database&#45;&gt;cameras -->
+<g id="edge3" class="edge">
+<title>database-&gt;cameras</title>
+<path fill="none" stroke="black" d="M611.14,-146.8C629.93,-146.8 650.76,-146.8 671.12,-146.8"/>
+<polygon fill="black" stroke="black" points="670.85,-150.3 680.85,-146.8 670.85,-143.3 670.85,-150.3"/>
+</g>
+</g>
+</svg>
