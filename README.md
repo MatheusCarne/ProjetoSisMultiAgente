@@ -83,8 +83,10 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
 - O **Agente de Rastreamento** mantém o histórico de cada pessoa detectada e envia dados para o **Agente de Análise**.
 - O **Agente de Análise** gera estatísticas, identifica horários de pico e detecta padrões.
 - O **Agente de Interface** consome essas informações para exibir no dashboard e emitir alertas em tempo real.
-  
-![Foto](projeto/imagens/diagramaagentes.png)
+
+<div align="center">
+  <img src="projeto/imagens/diagramaagentes.png" alt="Diagrama" width="100%">
+</div>
 
 ## 📌 Status Inicial do Projeto
 - [x] Ideia discutida e validada com o professor  
