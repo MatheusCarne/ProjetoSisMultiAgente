@@ -30,6 +30,7 @@
 ## Detecção de Pessoas com YOLO
 
 O notebook [`detectionyolo.ipynb`](detectionyolo.ipynb) demonstra a detecção de pessoas usando YOLOv3 com OpenCV. Ele carrega uma imagem e identifica pessoas com bounding boxes.
+- Para ver melhor o resultado recomendo abrir no Colab
 
 ## Requisitos
 Python 3.7+
