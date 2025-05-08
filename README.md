@@ -10,7 +10,7 @@
       <a href="https://github.com/MatheusCarne" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/88046644?v=4" width="100px;" alt="Avatar Matheus"/><br>
         <sub>
-          <b>Matheus Carneiro</b>
+          <b>Matheus Carneiro | 202111250033</b>
         </sub>
       </a>
     </td>
@@ -18,7 +18,7 @@
       <a href="https://github.com/LucasByteX" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/105729815?v=4" width="100px;" alt="Avatar Lucas"/><br>
         <sub>
-          <b>Lucas Daris</b>
+          <b>Lucas Daris | 202021250037</b>
         </sub>
       </a>
     </td>
@@ -83,29 +83,19 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
 - O **Agente de Rastreamento** mantém o histórico de cada pessoa detectada e envia dados para o **Agente de Análise**.
 - O **Agente de Análise** gera estatísticas, identifica horários de pico e detecta padrões.
 - O **Agente de Interface** consome essas informações para exibir no dashboard e emitir alertas em tempo real.
-
-*(Um fluxograma poderá ser adicionado posteriormente para visualizar essas interações.)*
-
-## 🗂️ Organização e Planejamento do Projeto
-O progresso deste projeto será monitorado através do **GitHub Projects**.
-
-> Acesse a aba "Projects" do repositório para acompanhar:
-- Tarefas pendentes
-- Tarefas em andamento
-- Tarefas concluídas
-
-Cada integrante deve ser responsável por pelo menos uma tarefa no quadro.  
-Use etiquetas (labels) e comentários para detalhar o andamento e as decisões.
+  
+![Foto](projeto/imagens/diagramaagentes.png)
 
 ## 📌 Status Inicial do Projeto
 - [x] Ideia discutida e validada com o professor  
-- [ ] Estrutura básica do repositório criada  
-- [ ] Quadro no GitHub Projects criado  
-- [ ] Primeiras tarefas definidas e atribuídas  
+- [x] Estrutura básica do repositório criada  
+- [x] Quadro no GitHub Projects criado  
+- [x] Primeiras tarefas definidas e atribuídas  
 
 ## 📄 Documentação Futura
 Este repositório poderá incluir:
-- Diagramas de arquitetura do sistema multiagente  
+###  Diagramas de arquitetura do sistema multiagente
+  ![Foto](projeto/imagens/diagramadearquitetura.png)
 - Relatórios parciais de progresso  
 - Scripts de testes ou simulações  
 - Resultados e conclusões finais  
