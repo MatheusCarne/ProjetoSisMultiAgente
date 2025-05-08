@@ -29,7 +29,7 @@
 
 ## Detecção de Pessoas com YOLO
 
-O notebook [`Notebooks/detectionyolo.ipynb`](Notebooks/detectionyolo.ipynb) demonstra a detecção de pessoas usando YOLOv3 com OpenCV. Ele carrega uma imagem e identifica pessoas com bounding boxes.
+O notebook [`detectionyolo.ipynb`](detectionyolo.ipynb) demonstra a detecção de pessoas usando YOLOv3 com OpenCV. Ele carrega uma imagem e identifica pessoas com bounding boxes.
 
 ## Requisitos
 Python 3.7+
