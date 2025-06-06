@@ -1,4 +1,4 @@
-# Detecção e Contagem de Pessoas em Espaços Públicos com Geração automática de relatórios usando LLM.
+# 🧠 Detecção e Contagem de Pessoas com Geração Automática de Relatórios usando Arquitetura Multiagente
 ## 👨‍🎓 Integrantes
 
 <div style="display: inline_block;" align="center">
@@ -27,26 +27,40 @@
 </div>
 
 ## 💡 Ideia Principal
-Um sistema que analisa imagens para contar o número de pessoas e detectar padrões de movimentação e com isso gerar relatórios com agentes inteligentes.
+O projeto consiste em um sistema baseado em agentes inteligentes para **detecção e contagem de pessoas** em ambientes públicos, com capacidade de **gerar relatórios automáticos** via modelos de linguagem (LLMs). C
 
 <div align="center">
   <img src="projeto/imagens/detec.png" alt="Diagrama" width="100%">
 </div>
 
 ## 🎯 Objetivos
-- Geração de relatórios com agentes inteligentes
-- Dashboard que exibe estatísticas em tempo real sobre a movimentação.  
-- Integrar alertas para controle de lotação.  
-- Talvez analisar tendências de fluxo.
+- Criar um sistema descentralizado e modular, com agentes inteligentes.
+- Detectar, contar e rastrear pessoas com alta precisão.
+- Gerar relatórios automáticos por LLM com base nos dados coletados.
+- Possibilidade de dashboard em tempo real com alertas de lotação.
+- Possibilidade futura de prever padrões de movimentação.
 
 ## 👥 Público-Alvo
 Empresas e governos que precisam monitorar o fluxo de pessoas em locais públicos para otimizar serviços e segurança.
 
-## 🤖 Agentes Envolvidos
-- **Agente de Visão (Detector)**: Responsável por detectar pessoas nas imagens captadas pelas câmeras usando visão computacional.  
-- **Agente de Rastreamento (Tracker)**: Rastreia os indivíduos detectados para evitar contagens duplicadas e identificar padrões de movimentação.  
-- **Agente de Análise (Analista)**: Compila os dados de rastreamento e gera estatísticas, insights e relatórios.  
-- **Agente de Interface (Dashboard)**: Exibe em tempo real os dados coletados e gerencia os alertas para controle de lotação.  
+## 🤖 Arquitetura Multiagente
+
+O sistema é dividido em agentes, cada um com responsabilidades bem definidas:
+
+- **🧠 Agente de Visão (Detector)**  
+  Utiliza YOLO ou modelos similares para realizar a detecção de pessoas em imagens ou vídeo em tempo real.
+
+- **📍 Agente de Rastreamento (Tracker)**  
+  Acompanha os indivíduos detectados ao longo dos frames, garantindo que cada pessoa seja contada apenas uma vez.
+
+- **📊 Agente de Análise (Analista)**  
+  Recebe os dados de rastreamento e os processa para gerar estatísticas temporais (picos de fluxo, variação por hora, etc.).
+
+- **📝 Agente de Relatório (LLM Reporter)**  
+  Utiliza um modelo de linguagem (como GPT-4 ou LLaMA) para transformar dados quantitativos em relatórios descritivos.
+
+- **📈 Agente de Interface (Dashboard)**  
+  Apresenta gráficos, contagens e alertas em tempo real via uma interface web interativa.
 
 ## 🧱 Tecnologias Pretendidas
 - **Linguagem de Programação:** Python  
@@ -95,7 +109,9 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
 - [x] Ideia discutida e validada com o professor  
 - [x] Estrutura básica do repositório criada  
 - [x] Quadro no GitHub Projects criado  
-- [x] Primeiras tarefas definidas e atribuídas  
+- [x] Primeiras tarefas definidas e atribuídas
+- [ ] Encapsulamento completo dos scripts como agentes
+- [ ]  Integração com LLM e geração de relatório
 
 ## 📄 Documentação Futura
 Este repositório poderá incluir:
