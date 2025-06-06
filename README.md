@@ -1,5 +1,4 @@
-# Detecção e Contagem de Pessoas em Espaços Públicos
-
+# Detecção e Contagem de Pessoas em Espaços Públicos com Geração automática de relatórios usando LLM.
 ## 👨‍🎓 Integrantes
 
 <div style="display: inline_block;" align="center">
@@ -28,16 +27,16 @@
 </div>
 
 ## 💡 Ideia Principal
-Um sistema que analisa imagens de câmeras para contar o número de pessoas e detectar padrões de movimentação.
+Um sistema que analisa imagens para contar o número de pessoas e detectar padrões de movimentação e com isso gerar relatórios com agentes inteligentes.
 
 <div align="center">
   <img src="projeto/imagens/detec.png" alt="Diagrama" width="100%">
 </div>
 
 ## 🎯 Objetivos
+- Geração de relatórios com agentes inteligentes
 - Dashboard que exibe estatísticas em tempo real sobre a movimentação.  
 - Integrar alertas para controle de lotação.  
-- Relatórios com gráficos e insights sobre o fluxo de pessoas.
 - Talvez analisar tendências de fluxo.
 
 ## 👥 Público-Alvo
