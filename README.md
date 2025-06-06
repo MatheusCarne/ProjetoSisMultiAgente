@@ -30,6 +30,10 @@
 ## 💡 Ideia Principal
 Um sistema que analisa imagens de câmeras para contar o número de pessoas e detectar padrões de movimentação.
 
+<div align="center">
+  <img src="projeto/imagens/detec.png" alt="Diagrama" width="100%">
+</div>
+
 ## 🎯 Objetivos
 - Dashboard que exibe estatísticas em tempo real sobre a movimentação.  
 - Integrar alertas para controle de lotação.  
