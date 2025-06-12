@@ -78,37 +78,35 @@
 - A principio a ideia era desevolver um codigo de detecção de pessoas e posteriormente com os resultados isso ser passado para um LLM gerar os relatorios, porem vi que daria para criar um agente que use nosso codigo de detecção como uma ferramenta, se encaixaria melhor na proposta da disciplina, porem estou com alguns problemas para implementar desse novo jeito a parte de ferramenta e a questão é:
 
 ✅ Opção 1: Manter o código de detecção como está + usar LLM apenas para relatório
-Estrutura:
-O código do YOLO continua como um script normal (sem agente).
-
-Após a detecção, os resultados (ex: JSON, CSV, ou texto) são enviados para uma LLM (como o ChatGPT ou Crew AI).
-
-A LLM gera o relatório de forma autônoma, interpretando os dados.
+- Estrutura:
+- O código do YOLO continua como um script normal (sem agente).
+- Após a detecção, os resultados (ex: JSON, CSV, ou texto) são enviados para uma LLM (como o ChatGPT ou Crew AI).
+- A LLM gera o relatório de forma autônoma, interpretando os dados.
 
 ✅ Vantagens:
-Mais simples e direto.
-Menos trabalho de reestruturação.
-Foco rápido em análise e geração de insights.
+- Mais simples e direto.
+- Menos trabalho de reestruturação.
+- Foco rápido em análise e geração de insights.
 
 ❌ Limitações:
-Pouca modularidade.
-Difícil escalar ou adicionar novos comportamentos (ex: rastreamento, decisão, notificações, etc).
-Os agentes não colaboram entre si.
+- Pouca modularidade.
+- Difícil escalar ou adicionar novos comportamentos (ex: rastreamento, decisão, notificações, etc).
+- Os agentes não colaboram entre si.
 
 🧠 Opção 2: Transformar o código de detecção em um agente e integrá-lo com o agente de relatório (multiagentes)
-Estrutura:
-Um Agente de Detecção encapsula e executa o YOLO.
-Um Agente de Relatório solicita os dados do agente de detecção e gera um relatório.
-Toda a interação é organizada e autônoma (pode até escalar para incluir rastreamento, alarmes, etc.).
+- Estrutura:
+- Um Agente de Detecção encapsula e executa o YOLO.
+- Um Agente de Relatório solicita os dados do agente de detecção e gera um relatório.
+- Toda a interação é organizada e autônoma (pode até escalar para incluir rastreamento, alarmes, etc.).
 
 ✅ Vantagens:
-Arquitetura modular e expansível.
-Pode usar Crew AI ou frameworks multiagentes como SPADE ou JADE.
-Mais próxima de sistemas reais de IA distribuída.
+- Arquitetura modular e expansível.
+- Pode usar Crew AI ou frameworks multiagentes como SPADE ou JADE.
+- Mais próxima de sistemas reais de IA distribuída.
 
 ❌ Limitações:
-Mais complexa de implementar inicialmente.
-Requer reestruturação do código atual.
-Exige mais controle da comunicação entre os agentes.
+- Mais complexa de implementar inicialmente.
+- Requer reestruturação do código atual.
+- Exige mais controle da comunicação entre os agentes.
 
 ---
