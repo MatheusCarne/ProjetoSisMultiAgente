@@ -30,11 +30,13 @@
   - Agente Analista (que poderia processar os dados JSON)
   - Agente de Relatório (que escreve o texto final)
 
-- **Eles interagem entre si? Como?**  
-Agente Responsável		
-| 1 |	Agente de Visão	    | Input Principal | Caminho da imagem	      | Output (Contexto para o Próximo) | Dados brutos (JSON com a contagem)   |
-| 2	| Agente Analista     | Input Principal	| Dados brutos da Etapa 1	| Output (Contexto para o Próximo) | Dados processados (Sumário em texto) |
-| 3 |	Agente de Relatório | Input Principal	| Sumário da Etapa 2	    | Output (Contexto para o Próximo) | Relatório final em linguagem natural |
+- **Eles interagem entre si? Como?**
+ 
+| Etapa | Agente Responsável   | Input Principal           | Output (Contexto para o Próximo)     |
+| :---- | :------------------- | :------------------------ | :----------------------------------- |
+| **1** | Agente de Visão      | Caminho da imagem         | Dados brutos (JSON com a contagem)   |
+| **2** | Agente Analista      | Dados brutos da Etapa 1   | Dados processados (Sumário em texto) |
+| **3** | Agente de Relatório  | Sumário da Etapa 2        | Relatório final em linguagem natural |
 
 
 - **Já existe algum ambiente de simulação/teste?**  
