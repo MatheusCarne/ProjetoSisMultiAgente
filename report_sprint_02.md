@@ -21,20 +21,20 @@
 ## ⚙️ 2. Arquitetura Atual
 
 - **Quantos agentes existem no sistema atualmente?**  
-  Agente detector
-  Agente Analista
-  Agente redator
+  - Agente detector
+  - Agente Analista
+  - Agente redator
 
 - **Função principal de cada agente:**  
-  Agente de Visão (que usa a ferramenta YOLO)
-  Agente Analista (que poderia processar os dados JSON)
-  Agente de Relatório (que escreve o texto final)
+  - Agente de Visão (que usa a ferramenta YOLO)
+  - Agente Analista (que poderia processar os dados JSON)
+  - Agente de Relatório (que escreve o texto final)
 
 - **Eles interagem entre si? Como?**  
 Agente Responsável		
-1	Agente de Visão	    | Input Principal | Caminho da imagem	      | Output (Contexto para o Próximo) | Dados brutos (JSON com a contagem)
-2	Agente Analista     | Input Principal	| Dados brutos da Etapa 1	| Output (Contexto para o Próximo) | Dados processados (Sumário em texto)
-3	Agente de Relatório | Input Principal	| Sumário da Etapa 2	    | Output (Contexto para o Próximo) | Relatório final em linguagem natural
+| 1 |	Agente de Visão	    | Input Principal | Caminho da imagem	      | Output (Contexto para o Próximo) | Dados brutos (JSON com a contagem)   |
+| 2	| Agente Analista     | Input Principal	| Dados brutos da Etapa 1	| Output (Contexto para o Próximo) | Dados processados (Sumário em texto) |
+| 3 |	Agente de Relatório | Input Principal	| Sumário da Etapa 2	    | Output (Contexto para o Próximo) | Relatório final em linguagem natural |
 
 
 - **Já existe algum ambiente de simulação/teste?**  
