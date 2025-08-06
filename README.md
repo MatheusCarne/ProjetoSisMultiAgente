@@ -29,9 +29,7 @@
 ## 💡 Ideia Principal
 O projeto consiste em um sistema baseado em agentes inteligentes para **detecção e contagem de pessoas** em ambientes públicos, com capacidade de **gerar relatórios automáticos** via modelos de linguagem (LLMs).
 
-<div align="center">
-  <img src="projeto/imagens/detec.png" alt="Diagrama" width="100%">
-</div>
+https://github.com/user-attachments/assets/650c8eb8-a342-4a15-b14f-f9678c4812f4
 
 ## 🎯 Objetivos
 - Criar um sistema descentralizado e modular, com agentes inteligentes.
@@ -43,43 +41,29 @@ O projeto consiste em um sistema baseado em agentes inteligentes para **detecç�
 ## 👥 Público-Alvo
 Empresas e governos que precisam monitorar o fluxo de pessoas em locais públicos para otimizar serviços e segurança.
 
-## 🤖 Arquitetura Multiagente
+## 🤖 Arquitetura
 
-O sistema é dividido em agentes, cada um com responsabilidades bem definidas:
-
-- **🧠 Agente de Visão (Detector)**  
-  Utiliza YOLO ou modelos similares para realizar a detecção de pessoas em imagens ou vídeo em tempo real.
-
-- **📍 Agente de Rastreamento (Tracker)**  
-  Acompanha os indivíduos detectados ao longo dos frames, garantindo que cada pessoa seja contada apenas uma vez.
+- **🧠 Motor de Rastreamento (Tracking Engine)**  
+  Utiliza Ultralytics, código especializado que fornece dados ao restante do sistema.
 
 - **📊 Agente de Análise (Analista)**  
-  Recebe os dados de rastreamento e os processa para gerar estatísticas temporais (picos de fluxo, variação por hora, etc.).
+  Recebe os dados de rastreamento e os processa para gerar estatísticas.
 
 - **📝 Agente de Relatório (LLM Reporter)**  
   Utiliza um modelo de linguagem (como GPT-4 ou LLaMA) para transformar dados quantitativos em relatórios descritivos.
-
-- **📈 Agente de Interface (Dashboard)**  
-  Apresenta gráficos, contagens e alertas em tempo real via uma interface web interativa.
 
 ## 🧱 Tecnologias Pretendidas
 - **Linguagem de Programação:** Python  
   > Escolhida por ser amplamente usada em aplicações de visão computacional e possuir grande variedade de bibliotecas especializadas.
 
 - **Bibliotecas e Frameworks:**
-  - **YOLO / OpenCV + Haar Cascades**: Para detecção de pessoas.  
-    > YOLO é rápido e eficiente para detecção em tempo real; Haar é uma alternativa mais leve para ambientes com menos poder computacional.
-  - **DeepSort**: Para rastreamento de indivíduos.  
+  - **Ultralytics TrackZone YOLO11m-pose / OpenCV**: Para detecção de pessoas.  
+    > YOLO é rápido e eficiente para detecção em tempo real.
+  - **TrackZone**: Para rastreamento de indivíduos.  
     > Permite identificar e seguir pessoas ao longo de múltiplos frames, evitando duplicações.
   - **OpenCV**: Para pré-processamento de imagens e manipulação de vídeo.  
-  - **Flask ou FastAPI**: Para criar uma API e interface web com o dashboard.  
-    > FastAPI tem melhor performance e é mais moderna; Flask é mais simples e direto.
   - **GPT-4 ou LLaMA**: Geração Automática de Relatórios.
     > Um LLM pode analisar os dados de movimentação (fluxo por horário, local, etc.) e gerar relatórios descritivos automaticamente.
-    > Ex: “Hoje, entre 12h e 14h, observou-se um aumento de 35% no fluxo em relação à média da semana.”
-  - **Banco de Dados (SQLite ou PostgreSQL)**: Armazenamento das contagens e histórico.  
-    > SQLite é leve e fácil de configurar; PostgreSQL é robusto para produção e grandes volumes de dados.
-
       
 - **Ferramentas de Visualização:**  
   - Bibliotecas de gráficos (como Plotly ou Matplotlib) para visualização no dashboard.  
@@ -89,21 +73,19 @@ O sistema é dividido em agentes, cada um com responsabilidades bem definidas:
 - Vídeos ou imagens de câmeras em tempo real.
 - Parâmetros de configuração (como zonas de interesse ou limite de lotação).
 
+**Entradas para os agentes:**
+- json com todos os dados de rastreio feito pelo TrackZone.
+
 **Saídas:**
-- Contagem de pessoas em tempo real.
-- Alertas de lotação (por exemplo, se ultrapassar determinado número).
-- Relatórios e gráficos sobre fluxo de pessoas ao longo do tempo.
+- json com todos os dados de rastreio feito pelo TrackZone.
+- Video processado com as pessoas rastreadas conforme configuração.
+- Relatórios e gráficos sobre fluxo de pessoas ao longo do rastreio.
 - Logs históricos com dados por dia/horário/local.
 
-## 🔁 Interação entre os Agentes
-- O **Agente de Visão** processa os frames das câmeras e envia as detecções para o **Agente de Rastreamento**.
-- O **Agente de Rastreamento** mantém o histórico de cada pessoa detectada e envia dados para o **Agente de Análise**.
-- O **Agente de Análise** gera estatísticas, identifica horários de pico e detecta padrões.
-- O **Agente de Interface** consome essas informações para exibir no dashboard e emitir alertas em tempo real.
-
-<div align="center">
-  <img src="projeto/imagens/diagramaagentes.png" alt="Diagrama" width="100%">
-</div>
+## 🔁 Interação
+- O **Motor de rastreamento** processa os frames ddo video e envia os dados para o **Agente de Análise** em forma Json.
+- O **Agente de Análise** gera estatísticas, detecta padrões, etc.
+- O **Agente de Relatório** consome essas informações para geração de relatório detalhado.
 
 ## 📌 Status Inicial do Projeto
 - [x] Ideia discutida e validada com o professor  
@@ -119,7 +101,3 @@ Este repositório poderá incluir:
 - Scripts de testes ou simulações  
 - Resultados e conclusões finais  
 - Diagramas de arquitetura do sistema multiagente
-
-<div align="center">
-  <img src="projeto/imagens/diagramadearquitetura.png" alt="Diagrama" width="100%">
-</div>
