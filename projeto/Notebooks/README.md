@@ -29,7 +29,7 @@
 
 ## Detecção de Pessoas com YOLO
 
-O notebook [`detectionyolo.ipynb`](detectionyolo.ipynb) demonstra a detecção de pessoas usando YOLO com OpenCV. Ele carrega umvideo e identifica pessoas com bounding boxes.
+O notebook [`detectionyolo.ipynb`]([detectionyolo.ipynb](https://colab.research.google.com/drive/1pTTPaymzu1Xws5MoFs1QgfkeYF_5_5i3?usp=sharing)) demonstra a detecção de pessoas usando YOLO com OpenCV. Ele carrega umvideo e identifica pessoas com bounding boxes.
 - Para ver melhor o resultado recomendo abrir no Colab
 
 ## Requisitos
