@@ -29,7 +29,7 @@
 ## 💡 Ideia Principal
 O projeto consiste em um sistema baseado em agentes inteligentes para **detecção e contagem de pessoas** em ambientes públicos, com capacidade de **gerar relatórios automáticos** via modelos de linguagem (LLMs).
 
-https://github.com/user-attachments/assets/650c8eb8-a342-4a15-b14f-f9678c4812f4
+https://github.com/user-attachments/assets/ba40abbe-33f6-400a-bacc-9abf2a2f63bf
 
 ## 🎯 Objetivos
 - Criar um sistema descentralizado e modular, com agentes inteligentes.
@@ -93,7 +93,7 @@ Empresas e governos que precisam monitorar o fluxo de pessoas em locais público
 - [x] Quadro no GitHub Projects criado  
 - [x] Primeiras tarefas definidas e atribuídas
 - [ ] Encapsulamento completo dos scripts como agentes
-- [ ]  Integração com LLM e geração de relatório
+- [x]  Integração com LLM e geração de relatório
 
 ## 📄 Documentação Futura
 Este repositório poderá incluir:
