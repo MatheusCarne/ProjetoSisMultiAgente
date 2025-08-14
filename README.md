@@ -26,6 +26,8 @@
 
 </div>
 
+https://youtu.be/hsH1c8j9AWQ
+
 ## 💡 Ideia Principal
 O projeto consiste em um sistema baseado em agentes inteligentes para **detecção e contagem de pessoas** em ambientes públicos, com capacidade de **gerar relatórios automáticos** via modelos de linguagem (LLMs).
 
